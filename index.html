@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jheirom | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for icons -->
+    <title>Jheirom | Home</title>
+   <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Menu -->
     <nav class="side-nav">
         <ul>
-            <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
-            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
-            <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i><span>Skills</span></a></li>
-            <li><a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i><span>Work</span></a></li>
-            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+            <li><a href="index.html" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li><a href="pages/about.html" class="nav-link"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li><a href="pages/skills.html" class="nav-link"><i class="fas fa-code"></i><span>Skills</span></a></li>
+            <li><a href="pages/portfolio.html" class="nav-link"><i class="fas fa-briefcase"></i><span>Work</span></a></li>
+            <li><a href="pages/contact.html" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
         </ul>
     </nav>
 
@@ -25,161 +24,25 @@
         <i class="fas fa-bars"></i>
     </div>
 
-    <!-- Page Container -->
-    <div class="page-container">
-        <!-- Home Section -->
-        <section id="home" class="page active">
-            <div class="home-content">
-                <h1 class="home-title">Hi, I'm <span>Jheirom Angelion M. Pablo</h1>
+    <!-- 3D Transition Canvas -->
+    <div id="transition-canvas"></div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="home-title">Hi, I'm <span>Jheirom Angelion M. Pablo</span></h1>
                 <p class="home-subtitle">Cybersecurity / Scuba Diver / Musician / Photographer / Streamer</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
                 </div>
-                <a href="#about" class="scroll-down">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="page">
-            <div class="section-container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="images/profile.jpg" alt="Your Name">
-                    </div>
-                    <div class="about-text">
-                        <h3>Who am I?</h3>
-                        <p>I'm a passionate web developer with X years of experience creating beautiful, functional websites. I specialize in front-end development with a focus on user experience.</p>
-                        <div class="info-list">
-                            <div class="info-item">
-                                <span>Name:</span> Your Name
-                            </div>
-                            <div class="info-item">
-                                <span>Email:</span> your.email@example.com
-                            </div>
-                            <div class="info-item">
-                                <span>From:</span> Your City, Country
-                            </div>
-                        </div>
-                        <a href="#" class="btn">Download CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="page">
-            <div class="section-container">
-                <h2 class="section-title">My Skills</h2>
-                <div class="skills-container">
-                    <div class="skills-category">
-                        <h3>Technical Skills</h3>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>HTML/CSS</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <!-- Add more skills -->
-                    </div>
-                    <div class="skills-category">
-                        <h3>Professional Skills</h3>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span>Cyber security</span>
-                                <span>90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <span>Photography</span>
-                                    <span>98%</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 50%"></div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-info">
-                                        <span>Photography</span>
-                                        <span>98%</span>
-                                    </div>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 90%"></div>
-                                    </div>
-                            </div>
-                        <!-- Add more skills -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="page">
-            <div class="section-container">
-                <h2 class="section-title">My Work</h2>
-                <div class="portfolio-filter">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="web">Web Design</button>
-                    <button class="filter-btn" data-filter="app">App Development</button>
-                </div>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item" data-category="web">
-                        <img src="images/project1.jpg" alt="Project 1">
-                        <div class="portfolio-overlay">
-                            <h3>Project Title</h3>
-                            <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <!-- Add more portfolio items -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="page">
-            <div class="section-container">
-                <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <h3>Email</h3>
-                            <p>your.email@example.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <h3>Phone</h3>
-                            <p>+1 234 567 890</p>
-                        </div>
-                    </div>
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
+                <a href="about.html" class="btn explore-btn">Explore My World <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

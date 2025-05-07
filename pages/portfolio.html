@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jheirom | Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <!-- Same as index.html -->
+
+    <!-- 3D Transition Canvas -->
+    <div id="transition-canvas"></div>
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <div class="section-container">
+            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cyber">Cybersecurity</button>
+                <button class="filter-btn" data-filter="photo">Photography</button>
+                <button class="filter-btn" data-filter="music">Music</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="cyber">
+                    <img src="images/cyber1.jpg" alt="Security Project">
+                    <div class="portfolio-overlay">
+                        <h3>Network Security Audit</h3>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="photo">
+                    <img src="images/photo1.jpg" alt="Underwater Photo">
+                    <div class="portfolio-overlay">
+                        <h3>Coral Reef Exploration</h3>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="music">
+                    <img src="images/music1.jpg" alt="Music Production">
+                    <div class="portfolio-overlay">
+                        <h3>Original Composition</h3>
+                        <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- Add more portfolio items -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/three.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
