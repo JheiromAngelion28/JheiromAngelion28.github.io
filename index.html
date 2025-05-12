@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jheirom | Home</title>
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -18,15 +18,25 @@
             <li><a href="pages/contact.html" class="nav-link"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
         </ul>
     </nav>
-
+    
     <!-- Mobile Navigation Toggle -->
     <div class="mobile-nav-toggle">
         <i class="fas fa-bars"></i>
     </div>
-
+    
     <!-- 3D Transition Canvas -->
-    <div id="transition-canvas"></div>
-
+    <canvas id="transition-canvas"></canvas>
+    
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src=".Videos/IMG_7688.MOV" type="video/mp4">
+            <!-- Fallback image if video doesn't load -->
+            <img src="Videos/IMG_7688.MOV" alt="Background fallback">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    
     <!-- Page Content -->
     <div class="page-content">
         <section class="hero-section">
@@ -41,8 +51,8 @@
             </div>
         </section>
     </div>
-
-    <script src="js/three.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
