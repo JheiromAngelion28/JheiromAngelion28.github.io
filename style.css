@@ -1,4 +1,4 @@
-/* Base Styles */
+/*  Styles */
 :root {
     --primary-color: #3498db;
     --secondary-color: #2c3e50;
@@ -414,11 +414,11 @@ body {
 }
 
 .portfolio-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 
 .portfolio-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.5);
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -504,7 +504,7 @@ body {
     display: inline-block;
     padding: 14px 35px;
     background: var(--primary-color);
-    color: white;
+    color: rgb(232, 216, 216);
     border-radius: 50px;
     text-decoration: none;
     transition: all var(--transition-speed);
