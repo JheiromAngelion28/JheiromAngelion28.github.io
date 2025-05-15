@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jheirom | Contact</title>
-   <link rel="stylesheet" href="../style.css">
+    <!-- Fix the path to the CSS file -->
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation Menu -->
     <nav class="side-nav">
         <ul>
-            <li><a href="/index.html" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
-          
+             <li><a href="../index.html" class="nav-link"><i class="fas fa-home"></i><span>Home</span></a></li>
         </ul>
     </nav>
+    
+    <!-- Mobile Nav Toggle -->
+    <div class="mobile-nav-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    
     <!-- 3D Transition Canvas -->
-    <div id="transition-canvas"></div>
+    <canvas id="transition-canvas"></canvas>
 
     <!-- Page Content -->
     <div class="page-content">
@@ -26,36 +32,50 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>jheirom.amp@gmail.com</p>
+                        <div>
+                            <h3>Email</h3>
+                            <p>jheirom.amp@gmail.com</p>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
-                        <h3>Phone</h3>
-                        <p>+197 56 340 1882</p>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+197 56 340 1882</p>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <a href="https://linkedin.com" target="_blank">linkedin.com/in/jheirom</a>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com" target="_blank">linkedin.com/in/jheirom</a>
+                        </div>
                     </div>
                     <div class="contact-item">
                         <i class="fab fa-facebook"></i>
-                        <h3>Facebook</h3>
-                        <a href="https://facebook.com" target="_blank">facebook.com/jheirom</a>
+                        <div>
+                            <h3>Facebook</h3>
+                            <a href="https://facebook.com" target="_blank">facebook.com/jheirom</a>
+                        </div>
                     </div>
                 </div>
                 <form class="contact-form">
-                    <input type="text" name="name" placeholder="Your Name">
-                    <input type="email" name="email" placeholder="Your Email">
-                    <textarea name="message" placeholder="Your Message"></textarea>
-                    <button type="submit">Send Message</button>
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="js/three.min.js"></script>
-    <script src="../script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
