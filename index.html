@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,36 @@
     <title>Jheirom | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional styles for typewriter effect */
+        .home-subtitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .skill-typewriter {
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            min-width: 10px;
+        }
+        
+        .skill-typewriter::after {
+            content: '|';
+            position: absolute;
+            right: -10px;
+            color: var(--primary-color);
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Menu -->
@@ -42,7 +73,7 @@
         <section class="hero-section">
             <div class="hero-content">
                 <h1 class="home-title">Hi, I'm <span>Jheirom Angelion M. Pablo</span></h1>
-                <p class="home-subtitle">Cybersecurity / Scuba Diver / Musician / Photographer / Streamer</p>
+                <p class="home-subtitle">I'm a <span class="skill-typewriter">Cybersecurity</span> Expert</p>
                 <div class="social-links">
                     <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>

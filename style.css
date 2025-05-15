@@ -269,25 +269,31 @@ body {
     color: var(--dark-color);
 }
 
-/* Skills Section */
+/* Skills Section Spacing Fix */
+/* Main section container */
 .skills-container {
     display: flex;
-    gap: 50px;
+    gap: 50px; 
     margin-top: 40px;
+    justify-content: space-between; /* Ensures even spacing between columns */
 }
+
 
 .skills-category {
-    flex: 1;
+    flex: 1; 
+    max-width: 48%; /* Prevents columns from stretching too wide */
 }
 
+/* Category headings */
 .skills-category h3 {
     font-size: 1.5rem;
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Consistent spacing below headers */
     color: var(--dark-color);
     position: relative;
     padding-bottom: 10px;
 }
 
+/* Consistent underline for category headings */
 .skills-category h3::after {
     content: '';
     position: absolute;
@@ -298,25 +304,35 @@ body {
     background: var(--primary-color);
 }
 
+/* Individual skill items */
 .skill-item {
-    margin-bottom: 25px;
+    margin-bottom: 25px; /* Consistent spacing between skill bars */
 }
+
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
 
 .skill-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: 20px; /* Consistent spacing between text and bar */
 }
 
+/* Skill text styling */
 .skill-info span {
     font-size: 1rem;
     color: var(--dark-color);
 }
 
+/* Skill name font weight */
 .skill-info span:first-child {
     font-weight: 600;
 }
 
+/* Skill progress bar container */
 .skill-bar {
     height: 10px;
     background: #e0e0e0;
@@ -324,12 +340,36 @@ body {
     overflow: hidden;
 }
 
+/* Skill progress indicator */
 .skill-progress {
     height: 100%;
     background: var(--primary-color);
     border-radius: 5px;
-    width: 0;
+    width: 0; /* Will be set by JavaScript */
     transition: width 1.5s ease-out;
+}
+
+/* Media query for mobile layout */
+@media (max-width: 992px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 40px; /* Slightly reduced gap for mobile */
+    }
+    
+    .skills-category {
+        max-width: 100%; /* Full width on mobile */
+    }
+}
+
+/* Dark mode considerations */
+@media (prefers-color-scheme: dark) {
+    .skills-category h3, .skill-info span {
+        color: #f1f1f1;
+    }
+    
+    .skill-bar {
+        background: #444;
+    }
 }
 
 /* Portfolio Section */
