@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initialize 3D transition system
+    // start 3D transition system
     try {
         init3DTransition();
     } catch (error) {
