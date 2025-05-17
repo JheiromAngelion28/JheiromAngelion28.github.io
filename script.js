@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Enhanced form submission with validation and proper handling
+    // form submission with validation and proper handling
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
