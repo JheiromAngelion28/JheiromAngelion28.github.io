@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 markValid(nameInput);
             }
             
-            // Validate email
+           
             if (emailInput) {
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 if (!emailInput.value.trim() || !emailRegex.test(emailInput.value)) {
@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
             
-            // Validate message
+            
             if (messageInput && !messageInput.value.trim()) {
                 markInvalid(messageInput, 'Please enter your message');
                 valid = false;
@@ -296,8 +296,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             if (valid) {
-                // Here you would typically send the data to a server
-                // For now, we'll simulate a successful submission
+                //  data to a server
+                
                 const formData = new FormData(contactForm);
                 const formObject = {};
                 formData.forEach((value, key) => {
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Insert message before form
                 contactForm.parentNode.insertBefore(successMessage, contactForm);
                 
-                // Remove message after 5 seconds
+                
                 setTimeout(() => {
                     successMessage.remove();
                 }, 5000);
